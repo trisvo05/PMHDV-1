@@ -1,0 +1,11 @@
+{
+  "name": "lab3-payment",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["fee-service", "bank-service"],
+  "scripts": {
+    "fee": "npm run start --workspace fee-service",
+    "bank": "npm run start --workspace bank-service",
+    "test:load": "node scripts/load-test.js"
+  }
+}
